@@ -1,4 +1,5 @@
 jenkins:
+  numExecutors: 0
   slaveAgentPort: 50000
   systemMessage: Jenkins with AWS ECS demo
   agentProtocols:
