@@ -13,3 +13,6 @@ Access Jenkins at http://localhost:8080 and use the `JENKINS_USERNAME` and `JENK
 ## Deploying
 
 Push image to Docker Hub with `./gradlew docker dockerTagLatest dockerPushLatest`.
+
+## Need further support?
+Contact me if you need help at tom@tomgregory.com.
