@@ -1,7 +1,7 @@
-FROM jenkins/jenkins:2.319.3-jdk11
+FROM jenkins/jenkins:2.346.2-jdk11
 
 COPY jenkins-resources/plugins.txt /usr/share/jenkins/ref/plugins.txt
-RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt
 
 COPY jenkins-resources/initialConfig.groovy /usr/share/jenkins/ref/init.groovy.d/initialConfigs.groovy
 COPY jenkins-resources/jenkins.yaml /usr/share/jenkins/ref/jenkins.yaml
